@@ -1,1 +1,305 @@
 @forward "global";
+
+// Styles for Content Wrapper
+.main-wrapper {
+  max-width: 1600px;
+  width: 100%;
+  height: 100%;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+
+// Styles for nav container
+.top-nav-container {
+  width: 100%;
+  // background-color: green;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  .main-logo {
+    width: 100%;
+  }
+}
+.links-container {
+  display: flex;
+  .link {
+    padding-right: 3rem;
+    font-size: var(--small-font);
+  }
+}
+.social-container {
+  width: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote-container {
+  width: fit-content;
+  .quote-btn {
+    width: 190px;
+    height: 45px;
+    background-color: var(--nearly-black);
+    color: var(--nearly-white);
+    text-transform: uppercase;
+    padding: 1rem 3rem;
+    border-radius: var(--btn-br);
+  }
+}
+
+.hamburger-container {
+  width: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .ham-btn-link {
+    width: 100%;
+  }
+  .ham-btn {
+    width: 100%;
+  }
+}
+
+// Styles for Sidebar Navigation Section
+.hamburger-menu-container {
+  position: fixed;
+  top: 2rem;
+  left: 2rem;
+  right: 2rem;
+  bottom: 2rem;
+  // background-color: pink;
+  z-index: 3;
+  display: flex;
+  justify-content: right;
+  padding: 2rem;
+  color: var(--nearly-white);
+}
+.quote-container-2 {
+  width: 100%;
+  .quote-btn {
+    background-color: var(--nearly-white);
+    color: var(--nearly-black);
+    text-transform: uppercase;
+    padding: 1rem 2.5rem;
+    border-radius: var(--btn-br);
+  }
+}
+.ham-links {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  justify-content: space-between;
+  font-size: var(--sidebar-font);
+  color: var(--nearly-white);
+  .quote-btn {
+    font-size: 20px !important;
+  }
+}
+
+// Styles for Main Section
+.main-show-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  // align-items: center;
+  // background-color: pink;
+}
+.left-show-container,
+.right-show-container {
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  align-items: center;
+}
+.show-targets {
+  width: 100%;
+  margin-bottom: 2rem;
+  // border-radius: 20px;
+}
+
+// Styles for Contact / Get a Quote Page
+// Styles for Jessica Container
+.main-jessica-container {
+  display: flex;
+  justify-content: center;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+}
+.jessica-image-container {
+  max-width: 50%;
+  width: 100%;
+  .jessica-target {
+    width: 100%;
+  }
+}
+.jessica-details-container {
+  max-width: 50%;
+  width: 100%;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  h3 {
+    text-align: center;
+  }
+}
+
+// Styles for Contact form
+.main-contact-container {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-header-container {
+  width: 100%;
+  max-width: 900px;
+  text-align: center;
+}
+.contact-form-container {
+  padding: 5rem 1rem;
+  max-width: 60%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  label {
+    padding-bottom: 0.5rem;
+  }
+  input {
+    border: 0.5px solid var(--nearly-gray);
+    filter: drop-shadow(0px 5px 9px rgba(0, 0, 0, 0.01));
+    padding: 0 0.5rem;
+  }
+}
+#message {
+  padding: 0.5rem;
+  border: 0.5px solid var(--nearly-gray);
+  filter: drop-shadow(0px 5px 9px rgba(0, 0, 0, 0.01));
+}
+.form-btn-container {
+  width: 100%;
+  display: flex;
+  justify-content: right;
+}
+#submit {
+  background-color: var(--nearly-black);
+  color: var(--nearly-white);
+  padding: 1rem 3rem;
+  border-radius: var(--btn-br);
+  cursor: pointer;
+}
+
+// Styles for Footer Section
+footer {
+  width: 100%;
+  background-color: var(--nearly-gray);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8rem 0;
+}
+.f-social-container {
+  max-width: 10rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 5rem;
+  .fs-links-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.f-contact-container {
+  max-width: 20rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-right: 5rem;
+  .fs-links-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1016px) {
+  .hamburger-container {
+    display: block !important;
+    width: 4rem !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .links-container,
+  .link,
+  .social-container {
+    display: none !important;
+    width: 0 !important;
+    height: 0 !important;
+  }
+  .show-targets {
+    margin-bottom: 1rem !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .main-jessica-container {
+    flex-wrap: wrap !important;
+  }
+  .jessica-image-container,
+  .jessica-details-container {
+    max-width: 80% !important;
+    p {
+      padding-bottom: 1.5rem !important;
+    }
+  }
+}
+@media screen and (max-width: 639px) {
+  footer {
+    flex-direction: column-reverse !important;
+    align-items: flex-start !important;
+  }
+  .f-social-container,
+  .f-contact-container {
+    padding: 0 !important;
+  }
+  .f-contact-container {
+    margin-bottom: 3rem;
+  }
+}
+@media screen and (max-width: 598px) {
+  .quote-container {
+    display: none !important;
+    width: 0 !important;
+    height: 0 !important;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .main-show-container {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  .left-show-container,
+  .right-show-container {
+    width: 100% !important;
+  }
+  .ham-links {
+    font-size: 2rem !important;
+    .quote-btn {
+      font-size: 16px !important;
+      padding: 6% 20% !important;
+    }
+  }
+}

@@ -270,11 +270,19 @@ a {
 }
 .contact-form-container label {
   padding-bottom: 0.5rem;
+  width: 100%;
 }
 .contact-form-container input {
   border: 0.5px solid var(--nearly-gray);
   filter: drop-shadow(0px 5px 9px rgba(0, 0, 0, 0.01));
   padding: 0 0.5rem;
+}
+@media only screen and (max-width: 600px) {
+  .contact-form-container {
+    max-width: 100%;
+    width: 100%;
+    padding: 5rem 0 !important;
+  }
 }
 
 #message {
@@ -295,6 +303,7 @@ a {
   padding: 1rem 3rem;
   border-radius: var(--btn-br);
   cursor: pointer;
+  border: none;
 }
 
 footer {

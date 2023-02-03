@@ -151,6 +151,9 @@
   justify-content: space-evenly;
   h3 {
     text-align: center;
+    @media only screen and (max-width: 340px) {
+      font-size: 1rem !important;
+    }
   }
 }
 
@@ -167,6 +170,14 @@
   width: 100%;
   max-width: 900px;
   text-align: center;
+  h1 {
+    @media only screen and (max-width: 425px) {
+      font-size: 2rem !important;
+    }
+    @media only screen and (max-width: 320px) {
+      font-size: 1.5rem !important;
+    }
+  }
 }
 .contact-form-container {
   padding: 5rem 1rem;

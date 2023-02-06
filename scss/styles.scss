@@ -141,6 +141,11 @@
 .jessica-image-container {
   max-width: 50%;
   width: 100%;
+  filter: grayscale(60%) brightness(1.1);
+  -webkit-transform: scaleX(-1);
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  transform: scaleX(-1);
   .jessica-target {
     width: 100%;
   }

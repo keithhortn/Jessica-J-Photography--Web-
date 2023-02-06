@@ -233,6 +233,8 @@ a {
 .jessica-image-container {
   max-width: 50%;
   width: 100%;
+  filter: grayscale(60%) brightness(1.1);
+  transform: scaleX(-1);
 }
 .jessica-image-container .jessica-target {
   width: 100%;
